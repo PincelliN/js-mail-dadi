@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <form >
-        <input id="email" type="email">
-        <button>Invia</button>
+<body >
+    <div id="Background" class="  px-0">
+    <form class="text-center pt-5">
+        <input class="d-block mx-auto m-5 w-50 text-center border-0 rounded opacity-75" id="email" type="email" placeholder="Inserisci l'Email amici ed entrate">
+        <button class="rounded-pill p-1 btn btn-primary mb-3">Invia <span>*</span></button>
     </form>
-    <div id="result">
+    <div class="bg bg-white rounded text-center text-monospace h5 mt-3 opacity-75 d-none " id="CheckEmail"></div>
+
+    <div  class="text-center h1 mt-3" id="result">
     
     </div>
+</div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

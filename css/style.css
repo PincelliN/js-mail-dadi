@@ -3,5 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+#Background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/309237557_416251634001599_4825614874797605807_n.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ul{
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
