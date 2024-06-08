@@ -11,10 +11,13 @@ console.log(UserResult);
 let PcResult = User[Math.floor(Math.random() * User.length)];
 console.log(PcResult);
 if(UserResult>PcResult){
+    document.getElementById("Winner").innerHTML="You Win"
     console.log("you win");
 }else if (UserResult<PcResult) {
+    document.getElementById("Winner").innerHTML = "You Lose";
     console.log("you lose");
 } else {
+    document.getElementById("Winner").innerHTML = "You Draw";
     console.log("draw");
     
 }
