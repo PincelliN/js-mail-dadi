@@ -8,8 +8,5 @@ img {
 }
 #CpuDice > * {
   filter: invert(100%);
-  rotate: 90deg;
-}
-#CpuDice > *:last-child{
-    rotate: 180deg;
+  transform: scaleY(-1);
 }
