@@ -8,41 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container bg-danger">
+    <div id="container" class="container bg-danger rounded">
         <header class="">
-            <h1 class="text-center">Wanna Play</h1>
+            <h1 class="text-center text-light">Wanna Play</h1>
             <div class="text-center">
                 <button id="StartPlay" class="btn btn-primary mb-2">Start</button>
             </div>
         </header>
         <main id="PlayTabel" class="row justify-content-center mt-2 d-none">
             <div class="col-2 text-center">
-                <h3>G1</h3>
+                <h3 class="text-light">G1</h3>
                 <div id="GDice ">
-                    <img value="1" src="img/dice-six-faces-one-svgrepo-com.svg" alt="1">
-                    <img class="d-none" value="2" src="img/dice-six-faces-two-svgrepo-com.svg" alt="2">
-                    <img class="d-none" value="3" src="img/dice-six-faces-three-svgrepo-com.svg" alt="3">
-                    <img class="d-none" value="4" src="img/dice-six-faces-four-svgrepo-com.svg" alt="4">
-                    <img class="d-none" value="5" src="img/dice-six-faces-five-svgrepo-com.svg" alt="5">
-                    <img class="d-none" value="6" src="img/dice-six-faces-six-svgrepo-com.svg" alt="6">
+                    <img id="GDiceImg" src="img/dice-six-faces-one-svgrepo-com.svg" alt="1">
+                    
                 </div>
             </div>
-            <div class="col-auto d-flex align-items-end">
-                <button class="btn btn-secondary">Play</button>
+            <div  class="col-auto d-flex align-items-end">
+                <button id="PlayButton" class="btn btn-primary mb-2">Play</button>
             </div>
             <div class="col-2 text-center">
-                <h3>Cpu</h3>
+                <h3 >Cpu</h3>
                 <div id="CpuDice">
-                    <img value="1" src="img/dice-six-faces-one-svgrepo-com.svg" alt="1">
-                    <img class="d-none" value="2" src="img/dice-six-faces-two-svgrepo-com.svg" alt="2">
-                    <img class="d-none" value="3" src="img/dice-six-faces-three-svgrepo-com.svg" alt="3">
-                    <img class="d-none" value="4" src="img/dice-six-faces-four-svgrepo-com.svg" alt="4">
-                    <img class="d-none" value="5" src="img/dice-six-faces-five-svgrepo-com.svg" alt="5">
-                    <img class="d-none" value="6" src="img/dice-six-faces-six-svgrepo-com.svg" alt="6">
+                    <img id="CpuDiceImg" src="img/dice-six-faces-one-svgrepo-com.svg" alt="1">
+                   
                 </div>
             </div>
 
-            <div class="col-12 text-center" id="Winner"></div>
+            <div id="TabelResult" class="col-12 text-center h1 text-light d-none" id="Winner"></div>
         </main>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
