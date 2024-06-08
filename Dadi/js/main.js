@@ -5,6 +5,7 @@ StartPlay.addEventListener("click", function () {
   let Display = document.getElementById("PlayTabel").classList;
   console.log(Display);
   Display.remove("d-none");
+  StartPlay.classList.add("d-none");
 });
 
 
