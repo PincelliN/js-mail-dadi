@@ -1,6 +1,6 @@
 //varibile per richiamare il primo bottone
 const StartPlay = document.getElementById("StartPlay");
-// evento con rimozione di una classe
+// evento con rimozione di classi
 StartPlay.addEventListener("click", function () {
   let Display = document.getElementById("PlayTabel").classList;
   console.log(Display);
@@ -23,7 +23,7 @@ PlayButton.addEventListener("click",function () {
   "img/dice-six-faces-five-svgrepo-com.svg",
   "img/dice-six-faces-six-svgrepo-com.svg",
 ];
-//console.log(DiceFace);
+
 //Seconda variabile con i valori delle faccie di un dado
 let User = [1, 2, 3, 4, 5, 6];
 
@@ -40,15 +40,15 @@ Utilizzo il risultato come posizione
 
 let UserResult = User[Math.floor(Math.random() * User.length)];
 let DiceFaceUserResult = DiceFace[UserResult - 1];
-console.log(UserResult);
-console.log(DiceFaceUserResult);
+//(UserResult);
+//(DiceFaceUserResult);
 document.getElementById("GDiceImg").src= DiceFaceUserResult;
 
 
 let PcResult = User[Math.floor(Math.random() * User.length)];
 let DiceFacePcResult = DiceFace[PcResult-1]
-console.log(PcResult);
-console.log(DiceFacePcResult);
+//(PcResult);
+//(DiceFacePcResult);
 document.getElementById("CpuDiceImg").src = DiceFacePcResult;
 
 
@@ -58,8 +58,9 @@ ResultTabel.remove("d-none");
 
 if (UserResult > PcResult) {
 let Color = document.getElementById("container").classList;
+// probabilmente sarebbe più corretto inserire questo passaggio in un if
 Color.replace("bg-danger", "bg-success");
-Color.replace("bg-warning","bg-success")
+Color.replace("bg-warning","bg-success");
   document.getElementById("TabelResult").innerHTML = "You Win";
 } else if (UserResult < PcResult) {
   document.getElementById("TabelResult").innerHTML = "Cpu Win";

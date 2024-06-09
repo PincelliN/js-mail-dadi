@@ -20,6 +20,7 @@ const EmailOk = [
 // creo la costante legata al bottone
 const Button = document.querySelector("button");
 
+// costante per creare un ul e attraverso un ciclo for stampo al suo interno dei li con ogni elemento del array
 let Email = "<ul>";
 for (let i = 0; i < EmailOk.length; i++) {
   Email += "<li>" + EmailOk[i] + "</li>";
@@ -27,11 +28,11 @@ for (let i = 0; i < EmailOk.length; i++) {
 Email += "</ul>";
 document.getElementById("CheckEmail").innerHTML = Email;
 
-
+// evento legato al hover del mouse
 let Suggerimenti = document.querySelector("span")
 Suggerimenti.addEventListener("mouseover",function () {
   document.getElementById("CheckEmail").classList.remove("d-none");
-  }) 
+  }) // evento legato al mouseout
    Suggerimenti.addEventListener("mouseout",function () {
    document.getElementById("CheckEmail").classList.add("d-none");
 })
