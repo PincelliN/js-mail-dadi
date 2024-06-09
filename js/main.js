@@ -3,19 +3,15 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 
 //creo un array di email concesse
 const EmailOk = [
-  "carlo@gmail",
-  "marco@gmail",
-  "paolo@gmail",
-  "giorgio@gmail",
-  "anna@gmail",
-  "otto@gmail",
-  "gino@gmail",
-  "gina@gmail",
-  "pino@gmail",
-  "pina@gmail",
-  "me@gmail",
-  "te@gmail",
-  "ti@gmail",
+  "Frodo@gmail",
+  "Sam@gmail",
+  "Marry@gmail",
+  "Pipino@gmail",
+  "Gandalf@gmail",
+  "Aragor@gmail",
+  "Legolas@gmail",
+  "Gimlin@gmail",
+  "Boromir@gmail",
 ];
 // creo la costante legata al bottone
 const Button = document.querySelector("button");
